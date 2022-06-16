@@ -1,0 +1,33 @@
+### Get all Trainers ♦
+GET https://oa-live-api.herokuapp.com/trainer
+
+
+### Get a Trainer with trainerId ♦
+GET https://oa-live-api.herokuapp.com/trainer/<trainerId>
+
+
+### Create Trainer (trainer login)
+POST https://oa-live-api.herokuapp.com/trainer/create
+
+{
+ "trainerName":"ijass",
+  "designation": "full-stack Developer",
+  "skills": ["node","react","flutter"],
+  "email":"ijass@gmail.com",
+  "mobileNumber":"8015122373",
+  "profilePicture": "img url"
+}
+
+### Update trainer (trainer)
+PATCH https://oa-live-api.herokuapp.com/trainer/<trainerId>
+{
+ "trainerName":"ijass",
+  "designation": "full-stack Developer",
+  "skills": ["node","react","flutter"],
+  "email":"ijass@gmail.com",
+  "mobileNumber":"8015122373",
+  "profilePicture": "img url"
+}
+
+### Delete Trainer
+DELETE https://oa-live-api.herokuapp.com/trainer/<trainerId>

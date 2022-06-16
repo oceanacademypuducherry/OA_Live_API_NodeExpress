@@ -1,0 +1,19 @@
+### admin home
+POST https://oa-live-api.herokuapp.com/admin/
+{
+    "token":"jwtToken"
+}
+
+
+### login
+POST https://oa-live-api.herokuapp.com/admin/login
+{
+    "mobileNumber":"8015122373",
+}
+
+### sign up
+POST https://oa-live-api.herokuapp.com/admin/create
+{
+    "mobileNumber":"8015122373",
+    "adminName":"thamizhhd"
+}

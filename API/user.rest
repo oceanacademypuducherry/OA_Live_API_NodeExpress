@@ -1,0 +1,56 @@
+### Sign Up New User ♦
+POST https://oa-live-api.herokuapp.com/user/create
+{
+    "firstName":"thamizharasan",
+    "lastName":"hd",
+    "gender":"male",
+    "dateOfBirth":"28 Feb 1998 00:00:00 GMT",
+    "email":"thamizh@gmail.com",
+    "occupation":"student",
+    "instOrOrg":"OA",
+    "state":"pondicherry",
+    "country":"india",
+    "mobileNumber":"8015155373",
+    "profilePicture":"url",
+    "skills":[]
+}
+
+### update Loged user info ♦
+PATCH https://oa-live-api.herokuapp.com/user/
+
+{
+   "firstName":"thamizharasan",
+    "lastName":"hd",
+    "gender":"male",
+    "dateOfBirth":"28 Feb 1998 00:00:00 GMT",
+    "email":"thamizh@gmail.com",
+    "occupation":"student",
+    "instOrOrg":"OA",
+    "state":"pondicherry",
+    "country":"india",
+    // "mobileNumber":"8015155373", could not change this
+    "profilePicture":"url",
+    "skills":[],
+   "token":"jwtToken"
+}
+
+### for admin ♦
+GET https://oa-live-api.herokuapp.com/user/all
+
+### Get Loged user info ♦
+POST https://oa-live-api.herokuapp.com/user/
+{
+    "token":"jwtToken get from login response"
+}
+
+### Logi in ♦
+POST https://oa-live-api.herokuapp.com/user/login
+{
+    "mobileNumber": "8015122373"
+}
+
+### delete  Loged user info ♦
+DELETE https://oa-live-api.herokuapp.com/user/
+{
+    "token":"jwtToken"
+}

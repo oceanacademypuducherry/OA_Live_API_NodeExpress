@@ -1,0 +1,33 @@
+### Global purchase List ♦
+GET https://oa-live-api.herokuapp.com/purchased/all
+
+### Get all Purchase list with the user ♦
+POST https://oa-live-api.herokuapp.com/purchased/
+{
+    "token":"jwtToken"
+}
+
+
+### View Purchase details with the purchase id ♦
+GET https://oa-live-api.herokuapp.com/purchased/details/<purchaseId>
+
+###  purchse the course with courseId ♦
+POST https://oa-live-api.herokuapp.com/purchased/<courseId>
+
+{
+    "batchTime":"6-7",
+    "batchType":"Week-End",
+    "query":"user quer optional",
+    "token":"jwtToken"
+
+}
+
+
+### update purchsed course with purchaseId  ♦
+PATCH https://oa-live-api.herokuapp.com/purchased/make/batch
+
+{
+    "purchaseId":"623d966702e042923fc6f0be",
+    "hasBatch":false
+    
+}

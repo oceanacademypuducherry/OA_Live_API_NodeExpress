@@ -1,0 +1,13 @@
+{
+  "title": "webinar title",
+  "subtitle": "webinar subtitle",
+  "bannerImage": "url",
+  "course": "course",
+  "enrolledCount": 100,
+  "duration": 1,
+  "isFree": true,
+  "price": 0,
+  "topics": [],
+  "startAt": "2022-03-26T05:29:55.495Z",
+  "mentor": "6242c8443d9cb57da02ec01b"
+}

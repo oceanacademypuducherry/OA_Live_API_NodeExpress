@@ -1,0 +1,36 @@
+### Get all Courses ☻
+GET https://oa-live-api.herokuapp.com/course/
+
+### Get a Course with courseId
+GET https://oa-live-api.herokuapp.com/course/<courseId>
+
+### Add a Course (admin)
+POST https://oa-live-api.herokuapp.com/course/add/course
+Accept: */*
+
+{
+    "courseId": "OCNPY",
+    "courseImage": "url",
+    "courseName": "python",
+    "price": 1500,
+    "duration": 90,
+    "description":"course description",
+    "syllabus": [],
+    "token":"jwt token"
+}
+
+### Update a Course (admin)
+PATCH https://oa-live-api.herokuapp.com/course/<courseId>
+Accept: */*
+{
+    "courseImage": "url",
+    "courseName": "python",
+    "price": 1500,
+    "duration": 90,
+    "description":"course description",
+    "syllabus": [],
+    "token":"jwt token"
+}
+
+### Delete a Course (admin)
+DELETE https://oa-live-api.herokuapp.com/course/<courseId>

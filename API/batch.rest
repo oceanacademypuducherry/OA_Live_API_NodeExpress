@@ -1,0 +1,52 @@
+### https://oa-live-api.herokuapp.com/
+
+### get all batch for admin
+GET https://oa-live-api.herokuapp.com/batch/
+
+### batch filter for add batch
+GET https://oa-live-api.herokuapp.com/batch/filter/
+{
+    "courseId": "OCNFLUTTER",
+    "batchTime": "9-10",
+    "batchType": "week-days",
+    "hasBatch":false
+}
+
+
+### add batch (admin) 
+POST https://oa-live-api.herokuapp.com/batch/add
+{
+  "courseId": "OCNFLUTTER",
+  "student":"622b2d8bf7a6220af5561b92",
+  "courseProgress": 0,
+  "duration": 90,
+  "batchTime": "7-8",
+  "trainerId": "6228911f948080b2237dc7f5",
+  "batchType": "Week-Days",
+  "isComplete": false,
+  "isStarted": false,
+}
+
+### Get batch through Triner
+GET https://oa-live-api.herokuapp.com/batch/trainer/<trainerId>
+
+### Get batch through Course
+GET https://oa-live-api.herokuapp.com/batch/course/<courseId>
+
+### Get batch through User
+GET https://oa-live-api.herokuapp.com/batch/user/<userId>
+
+### Get batch through batchTime
+GET https://oa-live-api.herokuapp.com/batch/time/<batchTime>
+
+
+### Update Batch Start Date by admin
+PATCH https://oa-live-api.herokuapp.com/batch/status/update/<batchId>
+
+{
+     "courseStartDate": "2022-05-11T12:50:02.314Z",
+     "isComplete": true,
+     "courseProgress": 100,
+     "duration": 90,
+      "isStarted": true,
+}

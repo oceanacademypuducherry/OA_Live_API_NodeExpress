@@ -1,0 +1,77 @@
+### get all webinars
+GET https://oa-live-api.herokuapp.com/webinar/
+
+
+### Get all upcoming webinars
+GET https://oa-live-api.herokuapp.com/webinar/upcoming/
+
+
+### Get all ckompleted webinars
+GET https://oa-live-api.herokuapp.com/webinar/completed/
+
+{
+     "token": "admin token"
+}
+
+### Get upcoming webinar with id
+GET https://oa-live-api.herokuapp.com/webinar/upcoming/<webinarId>
+
+### Add webinar
+POST https://oa-live-api.herokuapp.com/webinar/add
+{
+  "title": "webinar title 2",
+  "subtitle": "webinar subtitle 2",
+  "bannerImage": "url",
+  "course": "course",
+  "enrolledCount": 100,
+  "duration": 1,
+  "isFree": true,
+  "isComplete":false,
+  "price": 0,
+  "topics": [],
+  "startAt": "2022-04-26T05:29:55.495Z",
+  "mentor": "6242c8443d9cb57da02ec01b",
+  "token":"admin token"
+}
+
+### Get all webinar mentor
+GET https://oa-live-api.herokuapp.com/webinar/mentor/all
+{
+    "token":"admin token"
+}
+
+### Add wbinar mentor
+Post https://oa-live-api.herokuapp.com/webinar/mentor/add
+
+{
+    "mentorName": "manisha",
+    "designation": "admin",
+    "mentorImage": "url",
+    "aboutMentor": "test",
+    "mentorEmail": "manisha@gmaiil.com",
+    "mobileNumber": "1234567890",
+    "token": "admin token"
+}
+
+
+### Get webinar user with webinar id
+GET https://oa-live-api.herokuapp.com/webinar/user/<webinarId>
+
+{
+    "mentorName": "manisha",
+    "designation": "admin",
+    "mentorImage": "url",
+    "aboutMentor": "test",
+    "mentorEmail": "manisha@gmaiil.com",
+    "mobileNumber": "1234567890",
+    "token": "admin token"
+}
+
+### Join webinar 
+POST https://oa-live-api.herokuapp.com/webinar/user/add
+{
+    "username":"devika",
+    "email":"devika@gmaiil.com",
+    "mobileNumber":"9345050414",
+    "webinar":"6242d2eb88d439f57132023e"
+}
